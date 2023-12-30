@@ -18,13 +18,13 @@
 
 # Working:  <br />
 step 1 - to populate db with random values  <br />
-  post request to http://127.0.0.1:8000//init-db  <br />
+  post request to http://127.0.0.1:8000/init-db  <br />
 step 2 - to chat with chatbot  <br />
-  post request to http://127.0.0.1:8000//process-prompt  <br />
+  post request to http://127.0.0.1:8000/process-prompt  <br />
    with this json data example  <br />
 {
     "input" : "find all prices for trades in database"
-}
+} <br />
 example output should be like this  <br />
 [
     {
