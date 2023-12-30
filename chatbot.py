@@ -8,7 +8,7 @@ from openai import OpenAI
 # load_dotenv()
 client = OpenAI(
     # This is the default and can be omitted
-    api_key="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",
+    api_key=os.getenv("OPENAI_API_KEY"),
 )
 # completion = openai.ChatCompletion()
 
