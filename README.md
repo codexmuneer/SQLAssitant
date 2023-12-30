@@ -1,31 +1,31 @@
 # SQLAssitant
 
-# Instructions to run this project
-  Git clone https://github.com/codexmuneer/SQLAssitant.git
-  Open any IDE you like.
-  In terminal create and activate virtual environment using these commands
-  python3 -m venv venv
-  venv\Scripts\activate
-  install all requirements using
-  pip install --ignore-installed -r requirements.txt
-  run app using uvicorn main:app --reload
+# Instructions to run this project  <br />
+  Git clone https://github.com/codexmuneer/SQLAssitant.git  <br />
+  Open any IDE you like.  <br />
+  In terminal create and activate virtual environment using these commands  <br />
+  python3 -m venv venv  <br />
+  venv\Scripts\activate  <br />
+  install all requirements using  <br />
+  pip install --ignore-installed -r requirements.txt  <br />
+  run app using uvicorn main:app --reload  <br />
 
-# Note:
- add your openAi key in .env file
- create database using any name in pgadmin
- add your PSQL server password in database.py file 
-   'postgresql://postgres:passHERE@localhost:5432/databasename'
+# Note:  <br />
+ add your openAi key in .env file  <br />
+ create database using any name in pgadmin   <br />
+ add your PSQL server password in database.py file  <br />
+   'postgresql://postgres:passHERE@localhost:5432/databasename'  <br />
 
-# Working:
-step 1 - to populate db with random values
-  post request to http://127.0.0.1:8000//init-db 
-step 2 - to chat with chatbot
-  post request to http://127.0.0.1:8000//process-prompt
-   with this json data example
+# Working:  <br />
+step 1 - to populate db with random values  <br />
+  post request to http://127.0.0.1:8000//init-db  <br />
+step 2 - to chat with chatbot  <br />
+  post request to http://127.0.0.1:8000//process-prompt  <br />
+   with this json data example  <br />
 {
     "input" : "find all prices for trades in database"
 }
-example output should be like this
+example output should be like this  <br />
 [
     {
         "price": 593.5690166390249
